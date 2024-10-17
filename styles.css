@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: hsl(0, 0%, 5%);
+}
+
+.whatsapp-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  background: hsl(0, 0%, 10%);
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav i {
+  padding: 10px;
+  border-radius: 50px;
+}
+
+nav i:active {
+  background-color: hsl(0, 0%, 21%);
+}
+
+nav i:last-child {
+  padding: 10px 19px;
+}
+
+i {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 35px 15px;
+  background: hsl(0, 0%, 15%);
+}
+
+.nav a {
+  padding: 2px 8px;
+  background-color: hsla(135, 100%, 39%, 0.5);
+  color: hsl(135, 100%, 35%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav > li:first-child > a {
+  background-color: hsl(135, 100%, 39%);
+  color: hsl(135, 100%, 10%);
+}
+
+.nav a:active {
+  background-color: hsla(135, 100%, 39%, 0.7);
+}
+
+.contact-list li {
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 30px;
+  width: 100%;
+}
+
+.contact-list li:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+.contact-list li:active {
+  background-color: hsl(0, 0%, 20%);
+}
+
+.contact-list {
+  width: 100%;
+}
+
+.contact-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 0.7rem;
+}
+
+.time, .chat {
+  color: hsl(0, 0%, 70%);
+}
+
+.chat {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chat span {
+  padding: 2px 7px;
+  background-color: hsl(135, 100%, 30%);
+  border-radius: 10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.note {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  text-align: center;
+}
+.note span {
+  color: hsl(0, 0%, 35%);
+}
+
+.note .fa-whatsapp {
+  color: hsl(0, 0%, 30%);
+  font-size: 3rem;
+  cursor: default;
+}
+
+.whatsapp-wrapper > div {
+  position: relative;
+}
+
+.hi {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hi .fa-o {
+  padding: 7px;
+  background-color: hsl(0, 0%, 35%);
+  border-radius: 10px;
+  color: hsl(240, 100%, 50%);
+}
+
+.hi .fa-o:active {
+  background-color: hsl(0, 0%, 45%);
+}
+
+.hi .fa-message {
+  padding: 20px;
+  background-color: hsl(135, 100%, 39%);
+  border-radius: 10px;
+}
+
+.hi .fa-message:active {
+  background-color: hsl(135, 100%, 49%);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 15%);
+}
+
+.under-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+.under-nav i,
+.under-nav {
+  color: hsl(0, 0%, 50%);
+}
+
+.under-nav:first-child,
+.under-nav:first-child i {
+  color: hsl(0, 0%, 100%);
+}
+
+@keyframes open {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes close {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.open {
+  animation: open 200ms ease-in;
+  left: 0;
+}
+.close {
+  animation: close 200ms ease-in;
+  left: 100;
+}
+
+#intro {
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: inherit;
+  padding: 10px;
+}
+
+#intro p {
+  display: flex;
+  max-width: 90px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

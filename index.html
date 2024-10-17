@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.css" />
+  </head>
+  <body>
+    <div class="whatsapp-wrapper">
+      <div id="intro">
+        <div class="note">
+          <i class="fab fa-whatsapp"></i>Whatsapp Demo
+        </div>
+        <p>from <span>Wisdom😎👨‍💻</span></p>
+      </div>
+      <header>
+        <h1>WA Business</h1>
+        <nav>
+          <i class="fa fa-camera"></i>
+          <i class="fa fa-search"></i>
+          <i class="fa fa-ellipsis-vertical"></i>
+        </nav>
+      </header>
+      <main>
+        <ul class="nav">
+          <li><a href="#">All</a></li>
+          <li><a href="#">Unread</a></li>
+          <li><a href="#">Favorites</a></li>
+          <li><a href="#">Groups</a></li>
+        </ul>
+        <ul class="contact-list">
+          <li onclick="openWhatsapp()">
+            <img src="/profile-img.jpg" alt="image" />
+            <div class="contact-details">
+              <div class="details">
+                <h2>Wisdom😎👨‍💻</h2>
+                <p id="firstTime" class="time">3:01pm</p>
+              </div>
+              <p class="chat"> 👋 Hi, my name is Wisdom Ofogba... <span id="number">1</span></p>
+            </div>
+          </li>
+        </ul>
+        <div class="note">
+          <i class="fab fa-whatsapp"></i>Whatsapp Demo
+          <span
+            >Welcome to my Whatsapp Business Demo clone</span
+          >
+        </div>
+      </main>
+      <div>
+        <div class="hi">
+          <i class="fa fa-o"></i>
+          <i class="fa-regular fa-message"></i>
+        </div>
+      </div>
+      <footer>
+        <div class="under-nav"><i class="fa-message fa"></i> Chats</div>
+        <div class="under-nav"><i class="fa fa-phone"></i> Calls</div>
+        <div class="under-nav">
+          <i class="fa-regular fa-circle-dot"></i> Updates
+        </div>
+        <div class="under-nav"><i class="fa fa-shop"></i> Tools</div>
+      </footer>
+      <iframe id="chat" src="/whatsapp-chat" frameborder="0"></iframe>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
